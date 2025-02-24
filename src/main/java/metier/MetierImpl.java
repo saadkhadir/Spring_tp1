@@ -5,9 +5,13 @@ import dao.IDao;
 public class MetierImpl implements IMetier {
     private IDao dao;
     @Override
-    public double calcul() {
+    public double calculKelvin() {
         double t=dao.getData();
-        double res=t*25;
+        double res=t+273.15;
         return res;
+    }
+
+    public void setDao(IDao dao) {
+        this.dao = dao;
     }
 }
