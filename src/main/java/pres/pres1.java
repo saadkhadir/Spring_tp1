@@ -1,6 +1,7 @@
 package pres;
 
 import dao.DaoImpl;
+import ext.DaoImplv2;
 import metier.MetierImpl;
 
 public class pres1 {
